@@ -1,0 +1,51 @@
+.header-background {
+  background-color: #000;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.header-menu a {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.125rem;
+  position: relative;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #fff;
+  margin-top: 2px;
+  transition: 0.3s;
+  position: absolute;
+}
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .header {
+    gap: 30px;
+  }
+  .header-menu a::after {
+    display: none;
+  }
+}

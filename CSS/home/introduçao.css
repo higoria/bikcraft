@@ -1,0 +1,90 @@
+.introduçao-background {
+  background: #000;
+  color: #fff;
+  box-shadow: inset 0 -120px #fff;
+}
+
+.introduçao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introduçao-textos {
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+.introduçao h1 {
+  margin-bottom: 32px;
+}
+
+.introduçao p {
+  margin-bottom: 20px;
+  color: #b2b2b2;
+}
+
+.introduçao-textos .spanpontofinal {
+  color: #ffbb00;
+}
+.introduçao-textos a {
+  color: #000;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 24px;
+}
+
+.introduçao img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .introduçao-background {
+    background: #111111;
+    height: 640px;
+    box-shadow: inset 0 -60px #fff;
+  }
+
+  .introduçao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    justify-content: center;
+  }
+  .introduçao-textos {
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+
+  .introduçao h1 {
+    font-size: 2rem;
+    line-height: normal;
+    margin-top: 30px;
+  }
+
+  .introduçao p {
+    font-size: 1.3rem;
+    max-width: 28ch;
+  }
+
+  .introduçao a {
+    padding: 12px;
+  }
+
+  .introduçao .introduçao-img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    bottom: 200px;
+  }
+  .introduçao-img img {
+    width: 400px;
+  }
+}

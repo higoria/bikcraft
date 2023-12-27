@@ -1,0 +1,19 @@
+.botao {
+  display: inline-block;
+  background-color: #ffbb00;
+  padding: 16px 28px;
+  border-radius: 7px;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 24px;
+}
+
+.botao:hover {
+  background: rgb(191, 128, 63);
+  background: linear-gradient(
+    151deg,
+    rgba(191, 128, 63, 1) 40%,
+    rgba(255, 224, 0, 1) 68%
+  );
+}

@@ -1,0 +1,112 @@
+.seguro-background {
+  background: #111;
+}
+
+.seguro-conteiner {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.seguro-conteiner h2 {
+  margin-bottom: 80px;
+  color: #fff;
+  grid-column: 1 / -1;
+}
+.seguro-conteiner .pontofinal3 {
+  color: #ffbb00;
+}
+.seguro-itens {
+  background-color: black;
+  border-radius: 10px;
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+}
+.seguro-itens li,
+.seguro-itens2 li {
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.seguro-itens li::before,
+.seguro-itens2 li::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 9px;
+  background-image: url(../img/icones/lista.svg);
+  position: relative;
+  top: 20px;
+  right: 20px;
+}
+.seguro-itens a {
+  grid-column: 1;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.seguro-itens a span {
+  background-color: #111;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.seguro-itens2 a {
+  grid-column: 1;
+  margin-bottom: 20px;
+}
+.seguro-itens2 a span {
+  color: black;
+  background-color: #ffbb00;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.seguro-itens2 a {
+  grid-column: 1;
+  color: #fff;
+}
+
+.seguro-itens .preço {
+  color: #fff;
+}
+.seguro-itens .mes {
+  display: block;
+  text-align: left;
+}
+.seguro-itens2 .preço {
+  grid-column: 2;
+  color: #fff;
+}
+.seguro-itens2 .mes2 {
+  display: block;
+  text-align: left;
+}
+.seguro-itens2 {
+  background-color: black;
+  border-radius: 10px;
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  gap: 40px;
+}
+.seguro-itens h3 {
+  color: #b2b2b2;
+  font-size: 2.3rem;
+}
+.seguro-itens2 h3 {
+  font-size: 2.3rem;
+  color: #ffbb00;
+}

@@ -1,0 +1,146 @@
+.bicicletas-lista {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.bicicletas-lista h2 {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.bicicletas-lista .pontofinal {
+  color: #ffbb00;
+}
+.bicicletas-lista ul {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bicicletas-lista .bikes {
+  margin-bottom: 18px;
+  border-radius: 10px;
+}
+
+.bicicletas-lista a {
+  display: block;
+}
+
+.bicicletas-lista h3 {
+  display: flex;
+  align-items: center;
+}
+
+.bicicletas-lista h3::before {
+  content: "";
+  background-color: #ffbb00;
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  margin-right: 8px;
+}
+.bicicletas-lista a:hover h3::before {
+  width: 30px;
+  transition: 0.3s;
+}
+
+.bicicletas-lista .preço {
+  padding-left: 20px;
+}
+
+@media (max-width: 576px) {
+  .bicicletas-lista h2 {
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  .bicicletas-lista h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  .bicicletas-lista li {
+    flex: 1;
+    min-width: 220px;
+  }
+  .bicicletas-lista ul {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 392px) {
+  .bicicletas-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicletas-lista h2 {
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+  .bicicletas-lista h3 {
+    font-size: 1.3rem;
+  }
+  .bicicletas-lista li {
+    min-width: 200px;
+  }
+}
+@media (max-width: 339px) {
+  .bicicletas-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicletas-lista h2 {
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+  }
+  .bicicletas-lista h3 {
+    font-size: 1.3rem;
+  }
+  .bicicletas-lista li {
+    min-width: 200px;
+  }
+  .bicicletas-lista ul {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .bicicletas-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicletas-lista h2 {
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 60px;
+  }
+  .bicicletas-lista h3 {
+    font-size: 1.3rem;
+  }
+  .bicicletas-lista li {
+    min-width: 200px;
+  }
+  .bicicletas-lista ul {
+    margin-top: auto;
+  }
+}

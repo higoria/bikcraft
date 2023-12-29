@@ -1,0 +1,150 @@
+.contato-conteiner {
+  background-color: #fff;
+  border-radius: 7px;
+}
+.contato {
+  background: linear-gradient(#111 500px, #fff 0px);
+}
+
+.contato-conteiner {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  align-items: center;
+}
+
+.contatos-prontos,
+.formulario {
+  padding: 60px;
+  margin-bottom: 200px;
+}
+
+.contatos-prontos {
+  background: #000;
+
+  display: grid;
+  gap: 40px;
+  color: #b2b2bb;
+  border-radius: 6px 0px 0px 6px;
+}
+
+.contatos-prontos h2 {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.contato-endereço {
+  font-size: 1.2rem;
+  display: grid;
+  gap: 10px;
+  background: no-repeat url("../../img/icones/local.svg") 0px 2px;
+  padding-left: 28px;
+}
+.contatos-emails {
+  margin-top: 32px;
+}
+.contatos-emails a {
+  margin-bottom: 10px;
+  display: block;
+  color: #b2b2bb;
+}
+.contatos-emails a:hover {
+  color: #fff;
+}
+
+.contatos-emails a:nth-child(2) {
+  margin-bottom: 32px;
+}
+.redessociais2 {
+  display: flex;
+  gap: 30px;
+  justify-content: start;
+  padding-left: 30px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.form label {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: "Poppins";
+  margin-bottom: 4px;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form textarea {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Poppins";
+  margin-bottom: 4px;
+  background-color: #dcdcdc;
+  padding: 8px;
+  border-radius: 7px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="email"] {
+  width: 300px;
+}
+
+button {
+  background-color: #ffbb00;
+  padding: 12px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ffa500;
+}
+
+@media (max-width: 576px) {
+  .contato-conteiner {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: -200px;
+  }
+  .form {
+    margin-top: -200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+}
+@media (max-width: 415px) {
+  .contato-conteiner {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: -200px;
+  }
+  .form {
+    margin-top: -200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-left: -30px;
+  }
+}

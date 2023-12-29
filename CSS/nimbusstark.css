@@ -1,0 +1,136 @@
+.conteinar-nimbus {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.imagens-nimbus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.imagens-nimbus img {
+  flex: 1;
+  min-width: 200px;
+  border-radius: 10px;
+}
+
+.imagens-nimbus img:first-child {
+  min-width: 100%;
+}
+
+.nimbus-conteudo p {
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.nimbus-compraragora {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: start;
+  gap: 3px;
+  margin-bottom: 30px;
+}
+
+.nimbus-compraragora a {
+  background-color: #ffbb00;
+  padding: 20px 37px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.nimbus-compraragora a:hover {
+  background-color: #ffa500;
+  padding: 20px 37px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.nimbus-compraragora span {
+  grid-column: 2;
+  background-color: #000;
+  max-width: max-content;
+  padding: 6px 9px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  margin-top: -35px;
+  margin-left: 10px;
+}
+
+.nimbus-conteudo h2 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.informaçoes-nimbus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #000;
+  border-radius: 6px;
+  gap: 32px;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+}
+.informaçoes-nimbus img {
+  width: 30px;
+  margin-bottom: 8px;
+}
+
+.informaçoes-nimbus h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.informaçoes-nimbus p {
+  color: #b2b2b2;
+  font-size: 1rem;
+}
+
+.FICHA-TÉCNICA-nimbus {
+  color: #fff;
+  background: #000;
+  padding: 20px 40px;
+  font-size: 1.3rem;
+  border-radius: 7px;
+}
+.FICHA-TÉCNICA-nimbus li {
+  border-bottom: 01px solid #b2b2b2;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.FICHA-TÉCNICA-nimbus li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 576px) {
+  .conteinar-nimbus {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .nimbus-compraragora a {
+    background-color: #ffbb00;
+    padding: 20px 37px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}

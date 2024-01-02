@@ -88,9 +88,6 @@ input {
 .orçamento-conteudo label span {
   margin-left: 120px;
 }
-.seg {
-  margin-left: 230px;
-}
 
 .orçamento-detalhes {
   display: grid;
@@ -186,12 +183,33 @@ input {
   .titulo-conteinar h1 {
     font-size: 3.3rem;
   }
+  .orçamento-detalhes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #000;
+    padding: 20px 20px;
+    align-items: center;
+  }
+  .orçamento-detalhes {
+    display: none;
+  }
+  .orçamento-produto input:checked + label + .orçamento-detalhes {
+    display: grid;
+  }
 }
 @media (max-width: 420px) {
-  .orçamento-conteudo label span {
+  .orçamento-conteudo span {
+    font-size: 1rem;
+    position: relative;
+    left: -10px;
+    bottom: 0px;
+  }
+  .orçamento-conteudo label .preçoform {
     font-size: 1.2rem;
     position: relative;
-    left: 30px;
+    left: 35px;
     bottom: 23px;
   }
 

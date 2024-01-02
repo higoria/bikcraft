@@ -85,7 +85,7 @@ input {
   padding-left: 40px;
 }
 
-span {
+label span {
   margin-left: 120px;
 }
 .seg {
@@ -109,7 +109,7 @@ span {
   margin-bottom: 6px;
 }
 
-li img {
+.orçamento-detalhes li img {
   width: 20px;
 }
 

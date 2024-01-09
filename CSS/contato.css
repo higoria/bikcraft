@@ -1,9 +1,11 @@
+.titulo-e-bg {
+  margin-bottom: 50px;
+}
 .contato-conteiner {
   background-color: #fff;
-  border-radius: 7px;
 }
 .contato {
-  background: linear-gradient(#111 500px, #fff 0px);
+  background: linear-gradient(#111 300px, #fff 0px);
 }
 
 .contato-conteiner {
@@ -23,8 +25,7 @@
 }
 
 .contatos-prontos {
-  background: #000;
-
+  background-color: #000;
   display: grid;
   gap: 40px;
   color: #b2b2bb;
@@ -64,20 +65,32 @@
   justify-content: start;
   padding-left: 30px;
 }
-
+.formulario {
+  background-color: #f8f8ff;
+  border-radius: 0px 6px 6px 0px;
+  height: 427px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  align-items: center;
+}
+
+.form .nome-form {
+  margin-top: -30px;
 }
 
 .form label {
   display: block;
   font-size: 1.7rem;
-  font-weight: 600;
   font-family: "Poppins";
   margin-bottom: 4px;
+  position: relative;
+  right: 20px;
+  top: -10px;
 }
 
 .form input[type="text"],
@@ -88,15 +101,23 @@
   font-weight: 500;
   font-family: "Poppins";
   margin-bottom: 4px;
-  background-color: #dcdcdc;
+  background-color: #f0ffff;
   padding: 8px;
   border-radius: 7px;
   width: 100%;
   box-sizing: border-box;
 }
+.form input[type="tel"],
+.tel {
+  margin-top: -16px;
+  width: 300px;
+}
 
 .form input[type="email"] {
   width: 300px;
+}
+textarea {
+  height: 55px;
 }
 
 button {

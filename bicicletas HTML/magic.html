@@ -6,11 +6,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magic Might | BikCreft</title>
-  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/style.min.css">
 
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../CSS/style.min.css" as="style">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
 </head>
 
 <body>
@@ -42,7 +47,7 @@
       <div class="nimbus-conteudo">
         <p class="font-2-l">A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
         <div class="nimbus-compraragora">
-          <a href="../orçamento.html">COMPRAR AGORA</a>
+          <a href="../orçamento.html?tipo=bikcraft&produto=magic">COMPRAR AGORA</a>
           <span class="font-1-xs"><img src="../img/icones/entrega.svg" alt="">entrega em 5 dias</span>
           <span class="font-1-xs"><img src="../img/icones/estoque.svg" alt="">18 em estoque</span>
         </div>
@@ -153,6 +158,7 @@
     </div>
   </footer>
 
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

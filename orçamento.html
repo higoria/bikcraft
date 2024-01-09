@@ -6,11 +6,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orçamento | BikCreft</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/style.min.css">
+  <link rel="preload" href="CSS/style.min.css" as="style">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
 </head>
 
 <body id="orçamento">
@@ -99,7 +104,6 @@
 
           <input type="radio" name="produto" value="ouro" id="ouro">
           <label class="label-modif" for="ouro">Ouro<span class="seg">R$ 299</span></label>
-
         </div>
       </div>
 
@@ -154,6 +158,7 @@
 
   </main>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>

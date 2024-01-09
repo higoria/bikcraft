@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta name="description" content="Bicicletas feitas sob medida.
@@ -7,11 +7,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BikCreft - Bicicletas Eletricas</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/style.min.css">
 
+  <link rel="preload" href="CSS/style.min.css" as="style">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
 </head>
 
 <body>
@@ -31,12 +38,12 @@
   <main class="introduçao-background">
     <div class="introduçao">
       <div class="introduçao-textos">
-        <h1 class="font-1-xxl">Bicicletas feitas sob medida<span class="spanpontofinal">.</span></h1>
-        <p class="font-2-l">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="botao" href="bicicletas.html">ESCOLHA A SUA</a>
+        <h1 class="font-1-xxl fadeInLeft " data-anime="200">Bicicletas feitas sob medida<span class="spanpontofinal">.</span></h1>
+        <p class="font-2-l fadeInLeft " data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a class="botao fadeInLeft" href="bicicletas.html fadeInDown " data-anime="600">ESCOLHA A SUA</a>
       </div>
       <div class="introduçao-img">
-        <img src="img/fotos/introducao.jpg" alt="BIKE DA INTRODUÇAO">
+        <img class="fadeInLeft" data-anime="800" src="img/fotos/introducao.jpg" alt="BIKE DA INTRODUÇAO">
       </div>
     </div>
   </main>
@@ -129,7 +136,7 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a href="./orçamento.html"><span>INSCREVA-SE</span></a>
+        <a href="./orçamento.html?tipo=seguro&produto=prata"><span>INSCREVA-SE</span></a>
       </div>
       <div class="seguro-itens2">
         <h3 class="font-1-xl">OURO</h3>
@@ -142,7 +149,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a href="./orçamento.html"><span>INSCREVA-SE</span></a>
+        <a href="./orçamento.html?tipo=seguro&produto=ouro"><span>INSCREVA-SE</span></a>
       </div>
     </div>
   </article>
@@ -184,6 +191,8 @@
       <p>Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="js/plugin/simple-anime.js"></script>;
+  <script src="js/script.js"></script>
 </body>
 
 </html>

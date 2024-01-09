@@ -6,11 +6,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bicicletas | BikCreft</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/style.min.css">
+  <link rel="preload" href="CSS/style.min.css" as="style">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
 </head>
 
 <body id="bicicletas">
@@ -30,8 +35,8 @@
   <main>
     <div class="titulo-e-bg">
       <div class="titulo-conteinar">
-        <p class="font-2-l-b">ESCOLHA A MELHOR PARA VOCÊ</p>
-        <h1 class="font-1-xxl">nossas bicicletas<span>.</span></h1>
+        <p class="font-2-l-b fadeInLeft " data-anime="200">ESCOLHA A MELHOR PARA VOCÊ</p>
+        <h1 class="font-1-xxl fadeInLeft" data-anime="400">nossas bicicletas<span>.</span></h1>
       </div>
     </div>
 
@@ -138,7 +143,8 @@
       <p>Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
-
+  <script src="js/plugin/simple-anime.js"></script>;
+  <script src="js/script.js"></script>
 </body>
 
 </html>
